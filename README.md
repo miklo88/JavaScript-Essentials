@@ -9,7 +9,7 @@
   </a>
 </p>
 
-> JavaScript fundamentals, a course from JavaScript-Essentials in Udemy. 
+> JavaScript fundamentals, a course from JavaScript-Essentials in Udemy.
 
 ## Install
 
@@ -27,13 +27,17 @@ npm run test
 
 👤 **Carl Redding &#34;Carlitos&#34;**
 
-* Twitter: [@miklo13f](https://twitter.com/miklo13f)
-* Github: [@miklo88](https://github.com/miklo88)
-* LinkedIn: [@Carl Redding](https://linkedin.com/in/Carl Redding)
+- Twitter: [@miklo13f](https://twitter.com/miklo13f)
+- Github: [@miklo88](https://github.com/miklo88)
+- LinkedIn: [@Carl Redding](https://linkedin.com/in/CarlRedding)
+
+Udemy Link for follow along.
+https://www.udemy.com/course/javascript-essentials/
 
 ## Show your support
 
 Give a ⭐️ if this project helped you!
 
-***
+---
+
 _This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
