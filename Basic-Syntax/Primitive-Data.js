@@ -1,6 +1,6 @@
 const PrimitiveData = () => {
   const define =
-    "Primitive Data means basic data, you cannot create an application without primitive data.";
+    "//1// Primitive Data means basic data, you cannot create an application without primitive data.";
 
   return define;
 };
