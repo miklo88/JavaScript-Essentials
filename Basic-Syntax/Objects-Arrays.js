@@ -1,7 +1,7 @@
 const objectArray = {
   language: "JavaScript",
   date: (time = Date()),
-  course: "Udemy JavaScript Essentials",
+  course: "JavaScript Essentials",
   greeting: (myNewGreeting = () => {
     return "//Objects and Arrays in JavaScript";
   }),
