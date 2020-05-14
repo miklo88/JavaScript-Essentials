@@ -88,3 +88,14 @@ const fast = "speed";
 console.log(fast);
 console.log(BMW[fast]); // same output "180"
 console.log(BMW["en" + "gine"]); // concatinating BMW en gine to return our engine object in the BMW object.
+////// Member creation, assignment and deletion. //////
+const arrayFunction = () => {
+  const arrayCreation = [
+    { text_one: "//17//" },
+    { text_two: "Creation" },
+    { text_three: "Assignment" },
+    { text_four: "Deletion" },
+  ];
+  return arrayCreation;
+};
+console.log(arrayFunction());
