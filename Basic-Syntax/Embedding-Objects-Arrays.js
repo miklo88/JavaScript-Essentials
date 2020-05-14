@@ -83,4 +83,8 @@ console.log(BMW["engine"]["pistons"][1]["maker"]);
 // pass it to BMW[ pointer ] //BMW
 const pointer = "make";
 console.log(pointer);
-console.log(BMW[pointer]);
+console.log(BMW[pointer]); // same output. "BMW"
+const fast = "speed";
+console.log(fast);
+console.log(BMW[fast]); // same output "180"
+console.log(BMW["en" + "gine"]); // concatinating BMW en gine to return our engine object in the BMW object.
