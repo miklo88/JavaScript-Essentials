@@ -37,3 +37,12 @@ const embeddedArray = ["string", 100, ["embed", 200], { color: "blue" }];
 // type embeddedArray in browswer console to grab array.
 
 //objects containing objects and containing arrays and continue to embed and embed and embed.
+
+//////////Member Access to Objects
+function memberFunction() {
+  const objectAccess = {
+    text: "//15// Member Access to objects",
+  };
+  return objectAccess;
+}
+console.log(memberFunction());
