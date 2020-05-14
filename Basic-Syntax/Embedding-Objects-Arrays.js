@@ -33,7 +33,15 @@ const BMW = {
 };
 console.log(BMW);
 
-const embeddedArray = ["string", 100, ["embed", 200], { color: "blue" }];
+const embeddedArray = [
+  "string",
+  100,
+  ["embed", 200],
+  { color: "blue" },
+  function () {
+    return "embeded function";
+  },
+];
 // type embeddedArray in browswer console to grab array.
 //objects containing objects and containing arrays and continue to embed and embed and embed.
 
@@ -51,3 +59,17 @@ console.log(memberFunction());
 console.log(BMW.make);
 console.log(BMW.drive());
 console.log(BMW.engine.pistons);
+//////////Computed Member Access //////////
+function computedAccess() {
+  const compAccess = {
+    text: "//16// Computed Member Access",
+  };
+  return compAccess;
+}
+console.log(computedAccess());
+//picking up where we left off with the BMW object
+// computed access allows you to access a deeply nested member
+// two choices with the . syntax, or the computed [] syntax
+console.log(BMW.engine.pistons[0]); // {maker: "BMW"}
+//now lets do it with the embeddedArray array
+console.log(embeddedArray[4]()); //selected the 4th item in that array starting with 0 and invoking the function.
