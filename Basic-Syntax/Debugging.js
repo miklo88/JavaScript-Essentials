@@ -1,5 +1,6 @@
 function Debugging() {
-  const bugs = "// Debugging and working with larger JS files in your editor.";
+  const bugs =
+    "//11// Debugging and working with larger JS files in your editor.";
   return bugs;
 }
 console.log(Debugging());

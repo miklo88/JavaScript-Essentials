@@ -3,7 +3,7 @@ const objectArray = {
   date: (time = Date()),
   course: "JavaScript Essentials",
   greeting: (myNewGreeting = () => {
-    return "//Objects and Arrays in JavaScript";
+    return "//13// Objects and Arrays in JavaScript";
   }),
 };
 console.log(objectArray);
