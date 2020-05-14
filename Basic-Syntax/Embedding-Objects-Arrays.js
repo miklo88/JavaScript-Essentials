@@ -142,7 +142,7 @@ console.log(BMW.engine); //delete newengine is gone :)
 ///////Array modification is a lot different than what we were doing with an object
 
 const arrayModification = () => {
-  const def = "//18// Array Modification";
+  const def = "//18// Array Modification with Groceries";
   return def;
 };
 console.log(arrayModification());
@@ -165,3 +165,31 @@ const groceries = [
   "bacon",
   "eggs",
 ];
+//modifying members of an array.
+console.log(groceries[0]);
+//re-assigning this property a new string name.
+groceries[0] = "honeycrisp apples";
+console.log(groceries[0]);
+/// arrays are innumerable which means countable. so be careful in adding
+// values to them. "look into array methods ;)"
+console.log(groceries.length); //returns the length of the array.
+//invoke your groceries array and open up your object and look under __proto__
+// this javascript object contains all of our array methods that we can use for this object. you'll find lenght in there
+groceries.shift();
+console.log(groceries); //you'll see honey crisp apples is gone. it shifts everything up one in the array.
+groceries.pop();
+console.log(groceries); // pops off the last property in our array.
+//adding new elements to the beginning of the array
+groceries.unshift("gala apples", "pork");
+console.log(groceries); // adds to the array
+groceries.push("mangoes", "olive oil"); // adds to the end of the array
+console.log(groceries);
+//adding to the middle of the array .splice
+groceries.splice(2, 2);
+console.log(groceries); // it will tell you what you deleted
+// now lets add them in again
+groceries.splice(2, 0, "naval oranges", "plantains", "bananas");
+console.log(groceries); //added three items into the array.
+//so lets delete an item and replace it with something new gala apples => honeycrisp apples
+groceries.splice(0, 1, "honeycrisp apples");
+console.log(groceries);
