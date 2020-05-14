@@ -99,3 +99,69 @@ const arrayFunction = () => {
   return arrayCreation;
 };
 console.log(arrayFunction());
+//assigning new values to an object. so assigning anew object {} or string to it
+//or changing a new value to the object.
+// for example changing the make of the car BMW to ford
+// BMW.make = "Ford";
+// console.log(BMW); // output for make property has changed to ford.
+// ||
+BMW.make += 200;
+console.log(BMW); //make BMW200
+
+BMW["speed"] *= 2;
+console.log(BMW); //speed 360
+
+BMW["engine"] = { newegine: "new" };
+console.log(BMW); // engine {newengine: "new"}
+// reassigning methods
+// BMW.drive = "drive";
+// console.log(BMW); //drive is now a string
+//creating a new keyname model 3Series to the BMW
+BMW.model = "3Series";
+console.log(BMW);
+//creating a color for the car.
+BMW.color = "Matte Black";
+console.log(BMW);
+//if you want to create something you'll have to define it.
+// lets create a new method!
+BMW.stop = function () {
+  return "stop";
+};
+console.log(BMW);
+//adding new methods to the engine object in the car
+BMW.engine.startEngine = function () {
+  return "start engine";
+};
+BMW.engine.poweroffEngine = function () {
+  return "shut down engine";
+};
+BMW.engine.horsepower = "500hp";
+//deleting members works like a boolean true/false statement.
+delete BMW.engine.newegine;
+console.log(BMW.engine); //delete newengine is gone :)
+///////Array modification is a lot different than what we were doing with an object
+
+const arrayModification = () => {
+  const def = "//18// Array Modification";
+  return def;
+};
+console.log(arrayModification());
+//groceries list array to work with
+const groceries = [
+  "apples",
+  "oranges",
+  "bananas",
+  "green peppers",
+  "onion",
+  "red onion",
+  "potatoes",
+  "tomatoes",
+  "orzo pasta",
+  "chicken",
+  "romaine lettuce",
+  "salt",
+  "pepper",
+  "hot sauce",
+  "bacon",
+  "eggs",
+];
