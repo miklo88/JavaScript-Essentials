@@ -73,3 +73,14 @@ console.log(computedAccess());
 console.log(BMW.engine.pistons[0]); // {maker: "BMW"}
 //now lets do it with the embeddedArray array
 console.log(embeddedArray[4]()); //selected the 4th item in that array starting with 0 and invoking the function.
+//now we can take our BMW object and start going into the nested object 'engine'
+// and nested array 'pistons' and selecting the second, aka [1] piston and select its maker.
+//computed access helps you being able to really get into the depths of objects.
+console.log(BMW["engine"]["pistons"][1]["maker"]);
+// now we can create a variable and give it a value and compare it to our object
+//ex in console
+// const pointer = "make"; //undefined
+// pass it to BMW[ pointer ] //BMW
+const pointer = "make";
+console.log(pointer);
+console.log(BMW[pointer]);
