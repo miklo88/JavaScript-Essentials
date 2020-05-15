@@ -33,7 +33,15 @@ function runExpression() {
   }
   return add();
 }
-//Execution Stack
+//Execution Stack in order of what is invoked first
 // runExpression();
 // add();
-//
+//--then a symbols table is created in store of what is in order.
+// so with runExpression creates var B = 17
+// then add asks if it can access a previous symbol. CLOSURE to encapsulate or enclose other symbols in a execution stack.
+// then add creates var B + 90
+
+//so understand that the first block of code to be executed with be runExpression()  and it will
+//create a symbols table symbol var B = 17;
+// then add will be run in the stack and its symbol B + 90 will be compared if it will replace,
+// stack under, or add to the current value in the call stack.
