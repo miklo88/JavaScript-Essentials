@@ -54,3 +54,34 @@ function inferredGlobal() {
   return inferredScope(scope);
 }
 console.log(inferredGlobal());
+
+//the window object is the highest level of scope. just open it up in your browswer.
+// if your expression cannot be found within its scope. it automatically defaults it to the browser window.
+//cobbering the global scope.
+
+/// assigning variables nested withing your functionalities scope. ex below
+// becareful because with nested variables can re-assign items on the global scope and dirupt functionality unless that is what youre aiming for.
+
+const globalObject = {
+  one: "one",
+  two: "two",
+  three: "three",
+  four: "four",
+};
+console.log(globalObject);
+
+function scopeExpression() {
+  const a = 10;
+  function nestedScope() {
+    test1 = "test-string";
+    test2 = "test-string";
+    test3 = "test-string";
+    test4 = "test-string";
+  }
+  return nestedScope();
+}
+//invoking scope expression will return undefined.
+// then the browser runs throught the stack and cannot find engine in the stack but comes across the
+//assignment operator = "test-string". This is where we said to be careful because now
+// when you type window.test1 in the browser console you get "test-string".
+// basically inferred globals is like a librarian who looks for variables and object on the browser.
