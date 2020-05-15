@@ -45,3 +45,12 @@ function runExpression() {
 //create a symbols table symbol var B = 17;
 // then add will be run in the stack and its symbol B + 90 will be compared if it will replace,
 // stack under, or add to the current value in the call stack.
+
+function inferredGlobal() {
+  const scope = "//22//";
+  function inferredScope(inferredGlobal) {
+    return inferredGlobal + " Inferred Globals and Scope";
+  }
+  return inferredScope(scope);
+}
+console.log(inferredGlobal());
