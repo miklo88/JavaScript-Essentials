@@ -32,9 +32,9 @@ console.log(
 const num = 22;
 console.log(num);
 //also numbers. but now take a look in your browser console and you can see the output of this code!
-function myArray() {
-  const array = ["one", "two", "three", "four", "five"];
-  //   return array;
-  return (document.getElementById("array-demo").innerHTML = array);
-}
-console.log(myArray());
+// function myArray() {
+//   const array = ["one", "two", "three", "four", "five"];
+//   //   return array;
+//   return (document.getElementById("array-demo").innerHTML = array);
+// }
+// console.log(myArray());
