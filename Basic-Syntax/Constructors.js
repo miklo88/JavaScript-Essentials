@@ -36,10 +36,14 @@ let appleFour = new Apple(8, 20, "Light Red", "McIntosh", 200);
 console.log(appleOne, appleTwo, appleThree, appleFour);
 
 //////prototype///////////////////////
-const prototype = () => {
-  return "//25// Prototypes and why JavaScript loves them";
-};
-console.log(prototype());
+function myPrototype() {
+  const char = "//25// Prototypes and why JavaScript loves them";
+  function newPrototype(myPrototype) {
+    return myPrototype + " //26// Applying prototype methods";
+  }
+  return newPrototype(char);
+}
+console.log(myPrototype());
 // shared objects that have properties or methods and be accessed by other means
 // a shared object for shared members
 // Apple.prototype = {
@@ -60,3 +64,7 @@ Apple.prototype.throw = function () {
 // you incorperate this to the prototype object so when invoked it knows
 // what context or exact object it is referring to
 console.log(appleTwo);
+// the best part about the THIS context in the protoype function method on our
+//apple object is that it works up and down the same chain.
+// so if invoked from appleOne and you work down the chain, you can work back up the
+//same path to go back up the chain.
