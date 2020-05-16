@@ -1,5 +1,8 @@
 //29// For-Loops
-
+const loopin = ["//29//", "//For//", "//Loops//"];
+for (var i = 0; i < loopin.length; i++) {
+  console.log(loopin[i]);
+}
 //basically looping through an array of data and being able to select specific items. You can add, delete data as well.
 
 // if(){} - is a singular conditon. Good for executing just once.
@@ -21,6 +24,11 @@ for (var i = classRegister.length - 1; i >= 0; i--) {
 
 var text = "";
 var i;
-for (var i = 0; i < 20; i++) {
+for (var i = 0; i < 5; i++) {
   console.log((text = "Number " + [i]));
+}
+
+//For In Loop - For Loops DRY brother.
+for (var index = 0 in classRegister) {
+  console.log(classRegister[index]);
 }
