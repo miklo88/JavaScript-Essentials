@@ -7,10 +7,15 @@
 
 const classRegister = ["John", "Erykah", "Samuel", "Carlos", "Amelia", "Celia"];
 
-//index counter - var i = 0;
-// condition if i is less than classRegister - 0 < classRegister.length;
-//incrementing value - i++
+//statement 1//index counter - var i = 0;
+//statement 2// condition if i is less than classRegister - 0 < classRegister.length;
+//statement 3//incrementing value - i++
+//incrementation of elements in the array
 for (var i = 0; i < classRegister.length; i++) {
+  console.log(classRegister[i]);
+}
+//de-incrementation of elements in the array
+for (var i = classRegister.length - 1; i >= 0; i--) {
   console.log(classRegister[i]);
 }
 
