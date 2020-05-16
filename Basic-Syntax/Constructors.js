@@ -34,3 +34,29 @@ let appleTwo = new Apple(12, 20, "Red", "Gala", 200);
 let appleThree = new Apple(5, 20, "Yellow", "Golden Delicious", 200);
 let appleFour = new Apple(8, 20, "Light Red", "McIntosh", 200);
 console.log(appleOne, appleTwo, appleThree, appleFour);
+
+//////prototype///////////////////////
+const prototype = () => {
+  return "//25// Prototypes and why JavaScript loves them";
+};
+console.log(prototype());
+// shared objects that have properties or methods and be accessed by other means
+// a shared object for shared members
+// Apple.prototype = {
+//   eat() {
+//     return this;
+//   },
+//   throw() {
+//     return this;
+//   },
+// };
+Apple.prototype.eat = function () {
+  return this;
+};
+Apple.prototype.throw = function () {
+  return this;
+};
+//what about THIS???
+// you incorperate this to the prototype object so when invoked it knows
+// what context or exact object it is referring to
+console.log(appleTwo);
