@@ -1,8 +1,8 @@
 const comparison = () => {
-  const compOp = "//27// Comparison Operators";
+  const compOn = "//27// Comparison Operators";
   return compOn;
 };
-console.log(comparison);
+console.log(comparison());
 
 ///Comparison is literally comparing two values with each other
 //depicts the way your program fucntions.
