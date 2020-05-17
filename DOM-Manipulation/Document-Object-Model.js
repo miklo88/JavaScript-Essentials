@@ -14,9 +14,21 @@ if (subDOM != 10) {
 //32// Targeting Document Object Model elements
 //document. is our key to grabbing html elements  off of the DOM
 // getElementById, querySelectorAll, etc
+// you can elaborate by giving elements classnames, ids etc.
 
 //33// Changing Elements Content
 console.log(document.querySelector("h1"));
 //dir gives you a whole lot more to work and see than .log
 //it renders for the object it really is.
 console.dir(document.querySelector("h1"));
+
+let leDom = document.getElementById("silly");
+console.log(document.getElementById("silly"));
+console.dir(document.getElementById("silly"));
+leDom.innerText += " in the ";
+leDom.innerText += " Document Object Model";
+
+let firstItem = document.getElementsByClassName("item-one");
+console.log(document.getElementsByClassName("item-one"));
+firstItem.innerText = "new one";
+firstItem.innerText += "meow";
