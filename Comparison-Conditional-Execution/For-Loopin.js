@@ -14,17 +14,17 @@ const classRegister = ["John", "Erykah", "Samuel", "Carlos", "Amelia", "Celia"];
 //statement 2// condition if i is less than classRegister - 0 < classRegister.length;
 //statement 3//incrementing value - i++
 //incrementation of elements in the array
-for (var i = 0; i < classRegister.length; i++) {
+for (let i = 0; i < classRegister.length; i++) {
   console.log(classRegister[i]);
 }
 //de-incrementation of elements in the array
-for (var i = classRegister.length - 1; i >= 0; i--) {
+for (let i = classRegister.length - 1; i >= 0; i--) {
   console.log(classRegister[i]);
 }
 
 var text = "";
 var i;
-for (var i = 0; i < 5; i++) {
+for (let i = 0; i < 5; i++) {
   console.log((text = "Number " + [i]));
 }
 
