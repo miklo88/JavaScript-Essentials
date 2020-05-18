@@ -49,3 +49,6 @@ element.onclick = function () {
   alert("Hi");
 };
 document.body.appendChild(element);
+// The insertBefore() method inserts a node as a child, right before an existing child,
+// which you specify. Tip: If you want to create a new list item, with text, remember to create the text as a
+// Text node which you append to the <li> element, then insert <li> to the list.
