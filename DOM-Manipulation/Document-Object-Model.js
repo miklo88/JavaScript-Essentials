@@ -10,13 +10,26 @@ if (subDOM != 10) {
 }
 // Understanding the DOM
 // This is the lawyer that represents JavaScript. An advocate for the language to communicate with the browser
-
+function targetDOM() {
+  const target = "//32// Targeting Document Object Model elements";
+  return target;
+}
+console.log(targetDOM());
 //32// Targeting Document Object Model elements
 //document. is our key to grabbing html elements  off of the DOM
 // getElementById, querySelectorAll, etc
 // you can elaborate by giving elements classnames, ids etc.
 
 //33// Changing Elements Content
+function changingDOM() {
+  const changing = "//33//";
+  function elementDOM(changingDOM) {
+    return changingDOM + " Changing Elements Content";
+  }
+  return elementDOM(changing);
+}
+console.log(changingDOM());
+
 console.log(document.querySelector("h1"));
 //dir gives you a whole lot more to work and see than .log
 //it renders for the object it really is.
@@ -30,5 +43,5 @@ leDom.innerText += " Document Object Model";
 
 let firstItem = document.getElementsByClassName("item-one");
 console.log(document.getElementsByClassName("item-one"));
-firstItem.innerText = "new one";
-firstItem.innerText += "meow";
+firstItem.innerText += " new one ";
+firstItem.innerText += " now";
