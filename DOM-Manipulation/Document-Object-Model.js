@@ -41,7 +41,32 @@ console.dir(document.getElementById("silly"));
 leDom.innerText += " in the ";
 leDom.innerText += " Document Object Model";
 
-let firstItem = document.getElementsByClassName("item-one");
-console.log(document.getElementsByClassName("item-one"));
-firstItem.innerText += " new one ";
-firstItem.innerText += " now";
+// let firstItem = document.getElementsByClassName("item-one");
+// console.log(document.getElementsByClassName("item-one"));
+// firstItem.innerText += " new one ";
+// firstItem.innerText += " now";
+
+//34// Changing Element Styles
+const elementStyles = () => {
+  const styles = "//34// Changing Element Styles";
+  return styles;
+};
+console.log(elementStyles());
+//writing html elements to the browser
+const styles = "//34// Changing Element Styles";
+const p = document.createElement("p");
+p.innerHTML = styles;
+document.body.appendChild(p);
+// element styles - being able to style a ul and li elements!
+const el = document.getElementById("list");
+// el.style.color = "white";
+// el.style.backgroundColor = "gray";
+// el.style.width = "100px";
+//what did it actually do? modifying the style modified the elements render.
+//faster way, smarter
+el.style.cssText = "background:blue; color:white; width:100px";
+// if you already have css styles
+el.style.cssText += " height: 100px;";
+// concat the style with the origional.
+// to override default styles you can list an element styles as !important
+// this will make the element that default element.
